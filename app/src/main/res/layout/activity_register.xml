@@ -72,4 +72,16 @@
         android:text="Sin Up"
         android:textColor="@color/white"
         android:textSize="25sp" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+  />
 </LinearLayout>
