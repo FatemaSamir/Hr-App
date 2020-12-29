@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userLogin() {
 
         String email = editTextEmail.getText().toString().trim();
-        String password = editTextEmail.getText().toString().trim();
+        String password = editTextPassword.getText().toString().trim();
 
         if (email.isEmpty()) {
             editTextEmail.setError("Email is required!");
