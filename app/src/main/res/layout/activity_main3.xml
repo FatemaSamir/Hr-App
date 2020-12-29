@@ -38,7 +38,7 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="182dp"
+            android:layout_width="172dp"
             android:layout_height="125dp"
             android:layout_margin="15dp"
             android:backgroundTint="#512D"
@@ -53,7 +53,6 @@
             android:text="Leave Quota" />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +61,7 @@
         <Button
             android:id="@+id/leave_status"
             android:layout_width="172dp"
-            android:layout_height="118dp"
+            android:layout_height="125dp"
             android:layout_margin="15dp"
             android:backgroundTint="#F4511E"
             android:text="Leave Status" />

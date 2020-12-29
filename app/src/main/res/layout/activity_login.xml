@@ -11,17 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
-        <ProgressBar
-            android:id="@+id/simpleProgressBar1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="100dp"
-            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username_text_input_layout"
@@ -37,7 +26,7 @@
                 android:layout_centerVertical="true"
                 android:drawableStart="@drawable/person"
                 android:drawablePadding="5dp"
-                android:hint="User Id"
+                android:hint="User ID"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:paddingStart="10dp"
@@ -59,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/lock"
                 android:drawablePadding="10dp"
-                android:hint="password"
+                android:hint="Password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:textSize="20sp" />
@@ -92,7 +81,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginEnd="1dp"
-                android:text="don_t_have_an_account "
+                android:text="Don't have an account "
                 android:textColor="@android:color/darker_gray"
                 android:textSize="18sp" />
 
@@ -118,7 +107,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginEnd="1dp"
-                android:text="Forget password? "
+                android:text="Forgot password?"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="18sp" />
         </RelativeLayout>

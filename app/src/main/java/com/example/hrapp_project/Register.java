@@ -8,7 +8,6 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,13 +25,11 @@ public class Register extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText etFullName, etEmail, etPhone, etDepartment ,etAge,EtPassword;
     public Button sinUp;
-    ProgressBar simpleProgressBa ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mAuth = FirebaseAuth.getInstance();
-        simpleProgressBa =  findViewById(R.id.simpleProgressBar);
         etFullName = findViewById(R.id.et_name);
         etEmail = findViewById(R.id.et_email);
         etPhone = findViewById(R.id.et_phone);
@@ -104,7 +101,6 @@ public class Register extends AppCompatActivity {
             return;
         }
 
-        simpleProgressBa.setVisibility(View.VISIBLE);
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>(){
 
@@ -119,23 +115,18 @@ public class Register extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
                                         Toast.makeText(Register.this, "User has been registered successfully!", Toast.LENGTH_SHORT).show();
-                                        simpleProgressBa.setVisibility(View.VISIBLE);
                                     }
                                     else {
                                         Toast.makeText(Register.this, "Failed to  register Tray Again!", Toast.LENGTH_SHORT).show();
-                                        simpleProgressBa.setVisibility(View.GONE);
                                     }
                                 }
                             });
                         }
                         else {
                             Toast.makeText(Register.this, "Failed to  register Tray Again!", Toast.LENGTH_SHORT).show();
-                            simpleProgressBa.setVisibility(View.GONE);
                         }
                     }
                 });
-        simpleProgressBa.setVisibility(View.GONE);
-        simpleProgressBa.setVisibility(View.INVISIBLE);
 
     }
 

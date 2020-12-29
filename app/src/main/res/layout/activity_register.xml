@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:hint="Full_name"
+        android:hint="Full name"
         android:inputType="textPersonName" />
 
     <EditText
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:hint="age"
+        android:hint="Age"
         android:inputType="date" />
 
     <EditText
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:hint="phone number"
+        android:hint="Phone number"
         android:inputType="phone" />
 
     <EditText
@@ -69,19 +69,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/bu2"
         android:gravity="center"
-        android:text="Sin Up"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="25sp" />
-
-    <ProgressBar
-        android:id="@+id/simpleProgressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:visibility="gone"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-  />
 </LinearLayout>
