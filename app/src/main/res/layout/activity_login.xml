@@ -11,17 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
-        <ProgressBar
-            android:id="@+id/simpleProgressBar1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="100dp"
-            />
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username_text_input_layout"
@@ -122,5 +112,16 @@
                 android:textColor="@android:color/darker_gray"
                 android:textSize="18sp" />
         </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/simpleProgressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            />
     </LinearLayout>
 </RelativeLayout>

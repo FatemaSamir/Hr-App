@@ -2,14 +2,14 @@ package com.example.hrapp_project;
 
 public class User {
 
-    String full_name,Email,Department,Age,phone;
+    String full_name,Email,Department,Age,phone,password;
 
-    public User(String full_name, String email) {
+    public User(String full_name, String email, String password) {
         this.full_name = full_name;
         Email = email;
 
     }
-    public User(String full_name, String email, String department, String age, String phone) {
+    public User(String full_name, String email, String department, String age, String phone, String password) {
         this.full_name = full_name;
         Email = email;
         Department = department;
@@ -54,6 +54,16 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password=password;
     }
 
 

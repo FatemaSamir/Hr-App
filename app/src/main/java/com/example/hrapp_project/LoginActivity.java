@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.regex.Pattern;
 
@@ -100,10 +101,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                   //redirect
-                    startActivity(new Intent(LoginActivity.this, profileActivity.class));
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
+                    if (user.isEmailVerified()){
 
+                        //redirect
+                        startActivity(new Intent(LoginActivity.this, profileActivity.class));
+
+                    } else {
+                        user.sendEmailVerification();
+                        Toast.makeText(LoginActivity.this, "check your email to verify your account!", Toast.LENGTH_LONG).show();
+                    }
                 }
                 else {
                     Toast.makeText(LoginActivity.this,"failed to login! please check your credentials", Toast.LENGTH_LONG).show();
