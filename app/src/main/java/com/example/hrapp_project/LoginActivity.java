@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
-
+//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
